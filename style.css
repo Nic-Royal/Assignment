@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(px1369813-image-kwvxxp91.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-left: 65px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 19px;
+    color: #ffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1{
+    font-size: 45px;
+    color: rgb(232, 107, 107);
+}
+
+
+.title h3{
+    font-size: 30px;
+    color: rgb(232, 107, 107);
+}
+
+
+/* html{
+    min-height: 100%;
+    overflow: hidden;
+}
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    font-family: 'Anonymous Pro', monospace;  
+    background-color: rgb(25,25,25);  
+} */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+  
+  /* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: transparent;}
+    to{border-right-color: transparent;}
+}
